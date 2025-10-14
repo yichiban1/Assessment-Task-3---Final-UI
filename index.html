@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>"Short Song, Long Life"</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      id="info"
+      style="
+        position: fixed;
+        bottom: 8vh;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 6px 14px;
+        font-size: 0.95rem;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.65);
+        border-radius: 4px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s;
+        z-index: 10;
+      "
+    ></div>
+    <div id="caption"></div>
+    <div id="poem">
+      <!-- 4 columns from right to left -->
+      <div class="col">
+        <div class="line" data-note="C4">对酒当歌</div>
+        <div class="line" data-note="D4">人生几何</div>
+      </div>
+      <div class="col">
+        <div class="line" data-note="E4">譬如朝露</div>
+        <div class="line" data-note="F4">去日苦多</div>
+      </div>
+      <div class="col">
+        <div class="line" data-note="G4">慨当以慷</div>
+        <div class="line" data-note="A4">忧思难忘</div>
+      </div>
+      <div class="col">
+        <div class="line" data-note="B4">何以解忧</div>
+        <div class="line" data-note="C5">唯有杜康</div>
+      </div>
+    </div>
+
+    <div id="controls">
+      <button id="play">Play</button>
+      <button id="reverse">Reverse</button>
+      <button id="random">random</button>
+    </div>
+
+    <script src="https://unpkg.com/tone@14.8.49/build/Tone.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
